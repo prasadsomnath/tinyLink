@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
+// this is get method logic 
 export async function GET() {
   try {
     const links = await prisma.link.findMany({
